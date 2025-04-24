@@ -1,0 +1,71 @@
+
+DATABASE NAME:-  onlinevotingsystem_project
+
+create table voter_Registration_Details
+(
+	voter_id varchar(255) primary key,
+	voter_name varchar(255),
+	voter_email varchar(255),
+	voter_adharcard varchar(255),
+	voter_birthdate varchar(255),
+	voter_age varchar(255),
+	voter_gender varchar(255),
+	voter_password varchar(255),
+	voter_phoneNo varchar(255),
+	voter_address varchar(255)
+	
+);
+
+create table Loginstatus
+( 
+  voter_id varchar(255),
+  voter_email varchar(255),
+  voter_password varchar(255),
+  status varchar(255)
+);
+
+
+
+create table candidates
+( 
+candidate_email varchar(255) primary key,
+candidate_name varchar(255),
+candidate_Aadhar varchar(255),
+candidate_party varchar(255),
+candidate_phone varchar(255),
+candidate_age varchar(255),
+candidate_gender varchar(255),
+candidate_address varchar(255)
+
+);
+
+
+create table parties
+( 
+p_id varchar(255),
+p_name varchar(255),
+p_leader varchar(255),
+p_type varchar(255),
+active_numbers varchar(255),
+est_date varchar(255),
+head_quarters varchar(255)
+);
+
+
+create table votingstatus
+(
+	voter_id varchar(255),
+	voter_name varchar(255),
+	politician_name varchar(255),
+	politician_party varchar(255),
+	time_date varchar(255)
+);
+
+create table finalresult
+(
+	candidate_name varchar(255),
+	candidate_party varchar(255),
+	total_votes int
+);
+
+
