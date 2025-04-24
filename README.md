@@ -1,3 +1,5 @@
+Centralized Voting System
+
 Explanation of Key Files and Folders
 .classpath
 Contains the classpath settings for the Eclipse IDE to recognize and build the project.
