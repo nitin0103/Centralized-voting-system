@@ -1,4 +1,4 @@
-Centralized Voting System
+# Centralized Voting System
 
 Explanation of Key Files and Folders
 .classpath
